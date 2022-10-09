@@ -20,6 +20,14 @@ export const FormLogin = () => {
   useEffect(() => {
     if (renderRef.current !== 0) return
     renderRef.current = renderRef.current + 1;
+		// greeterInstance.show_prompt.connect( (prompt, type) => this.show_prompt(prompt, type) );
+		// greeterInstance.show_message.connect( (msg, type) => this.show_message(msg, type) );
+		//
+		// window.start_authentication    = event => this.start_authentication(event);
+		// window.cancel_authentication   = event => this.cancel_authentication(event);
+		//
+		// greeterInstance.authentication_complete.connect( () => this.authentication_complete() );
+		// greeterInstance.autologin_timer_expired.connect( event => this.cancel_authentication(event) );
 
     greeterInstance.authenticate('quan');
     // greeterInstance.start_session(greeterInstance.sessions[0].key)
@@ -59,9 +67,6 @@ export const FormLogin = () => {
   return (
     <div className="flex justify-center items-center absolute w-1/3 h-80 z-[2]">
       <div className="w-max-[200px]">
-        <div className="w-max-[200px] bg-white">
-          {JSON.stringify(state)}
-        </div>
         <Form
           onFinish={onSubmit}
         >
