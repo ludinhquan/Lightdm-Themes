@@ -3,7 +3,8 @@
 }
 
 .cursor{
-  animation: animate 4s linear infinite;
+  filter: blur(50px);
+  /* animation: animate 4s linear infinite; */
 }
 
 @keyframes animate {

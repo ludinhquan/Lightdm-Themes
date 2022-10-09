@@ -1,9 +1,7 @@
 import {Login} from "./login"
 
-function App() {
+export const App = () => {
   return (
     <Login />
   )
 }
-
-export default App
